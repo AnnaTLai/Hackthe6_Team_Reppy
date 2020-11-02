@@ -9,7 +9,7 @@ import org.json.JSONObject
 object GovDataAPI {
     val TAG = "GovDataAPI"
     private const val key = "c8RYQKYjg551TVXBqpXUcQI4M0LY0VA3YdaBwICn"
-    private const val baseUrl = "https://api.propublica.org/congress/v1/members"
+    private const val baseUrl = "https://api.propublica.org/congress/v1/members" # using the API here
 
     fun getHouseRepresentative(state: String, district: String, onComplete: (JSONArray) -> Unit) {
         val httpAsync = "$baseUrl/house/$state/$district/current.json"
